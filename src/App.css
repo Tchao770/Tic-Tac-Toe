@@ -1,0 +1,100 @@
+.App {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: whitesmoke;
+    position: relative;
+}
+
+.Menu {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 5em;
+    width: 605px;
+}
+
+.Menu>h1 {
+    font-size: 50px;
+}
+
+.playButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Buttons {
+    font-size: 20px;
+    border-radius: 5px;
+    background: white;
+    border: solid;
+    border-width: 1px;
+    width: 10em;
+    height: 2em;
+    margin-bottom: 1em;
+    outline: none;
+}
+
+.Buttons:hover {
+    background-color: rgb(247, 147, 147);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.Game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.GameBoard {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: rgb(92 99 105 / 20%) 0px 10px 25px;
+}
+
+.Result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(65, 225, 158, 0.925);
+    width: 605px;
+    height: 605px;
+    opacity: 0;
+    transition-duration: 1s;
+    z-index: -1;
+}
+
+.Tile {
+    border: solid;
+    border-width: 1px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-size: 100px;
+}
+
+.Tile:hover {
+    background-color: rgb(247, 147, 147);
+    transition-duration: 0.5s;
+}
+.Hold{
+    background-color: rgb(247, 147, 147); 
+}
+
+.noHover {
+    pointer-events: none;
+}
